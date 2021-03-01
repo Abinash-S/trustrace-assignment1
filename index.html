@@ -21,13 +21,13 @@
                         <label for="yourName">Your Name<span>*</span></label>
                     </div>
                     <div class="col-35">
-                        <input type="text" name="firstName" placeholder="First Name" id="firstName" />
+                        <input type="text" name="firstName" placeholder="First Name" id="firstName" onchange="return checkFirstName()" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="col-35">
-                        <input type="text" name="lastName" placeholder="Last Name" id="lastName" />
+                        <input type="text" name="lastName" placeholder="Last Name" id="lastName" onchange="return checkLastName()"/>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -38,7 +38,7 @@
                         <label for="yourEmail">Your Email<span>*</span></label>
                     </div>
                     <div class="col-75">
-                        <input type="text" name="email" placeholder="eg. hello@contact.net" id="email" />
+                        <input type="text" name="email" placeholder="eg. hello@contact.net" id="email" onchange="return checkEmail()"/>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -49,7 +49,7 @@
                         <label for="yourEmail">Your Age<span>*</span></label>
                     </div>
                     <div class="col-75">
-                        <input type="number" name="age" placeholder="age" id="age"/>
+                        <input type="number" name="age" placeholder="age" id="age" onchange="return checkAge()"/>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -60,19 +60,19 @@
                         <label for="phone">Phone<span class="span">*</span></label>
                     </div>
                     <div class="col-25">
-                        <input type="tel" id="phone1" name="phone1" placeholder="###" maxlength="3" pattern="[0-9]{3}" >
+                        <input type="tel" id="phone1" name="phone1" placeholder="###" maxlength="3" pattern="[0-9]{3}" onchange="return checkPhone1()" >
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="fas fa-check-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="col-25">
-                        <input type="tel" id="phone2" name="phone2" placeholder="###" maxlength="3" pattern="[0-9]{3}" >
+                        <input type="tel" id="phone2" name="phone2" placeholder="###" maxlength="3" pattern="[0-9]{3}" onchange="return checkPhone2()" >
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="fas fa-check-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="col-25">
-                        <input type="tel" id="phone3" name="phone3" placeholder="####" maxlength="4" pattern="[0-9]{4}" >
+                        <input type="tel" id="phone3" name="phone3" placeholder="####" maxlength="4" pattern="[0-9]{4}" onchange="return checkPhone3()">
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="fas fa-check-circle"></i>
                         <small>Error message</small>
@@ -83,7 +83,7 @@
                         <label for="address">Your Address<span>*</span></label>
                     </div>
                     <div class="col-75">
-                        <textarea name="address" id="address" cols="30" rows="10" placeholder="type your address"></textarea>
+                        <textarea name="address" id="address" cols="30" rows="5" placeholder="type your address" onchange="return checkAddress()"></textarea>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -94,7 +94,7 @@
                         <label for="zipcode">Zipcode<span>*</span></label>
                     </div>
                     <div class="col-75">
-                        <input type="text" name="zipcode" placeholder="eg. 609111" id="zipcode"/>
+                        <input type="text" name="zipcode" placeholder="eg. 609111" id="zipcode" onchange="return checkZipcode()"/>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
