@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+    background: url("background.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+	background :none;
+	align-items: center;
+	width: 80%;
+	margin-left: 15%;
+}
+
+.header{
+	margin-left: 40px;
+}
+.form {
+	padding: 30px 40px;	
+	height: 100%;
+
+}
+
+.form-control {
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+
+.form-control label {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+select, textarea{
+	font-family: inherit;
+	display: flex;
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: .25rem
+}
+select{
+	height: calc(1.5em + .75rem + 2px);
+}
+
+.form-control input, .form-control.error input, .form-control.success input {
+	
+	font-family: inherit;
+	display: inline-block;
+    width: 70%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: .25rem
+}
+.col-25{
+	float: left;
+	width: 20%;
+	margin-top: 6px;
+}
+  
+.col-75 {
+	float: left;
+	width: 80%;
+	margin-top: 6px;
+}
+
+.col-35{
+	float: left;
+	width:33%;
+	margin-top: 6px;
+}
+.form-control::after {
+	content: "";
+	display: flex;
+	clear: both;
+}
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input, .form-control.success textarea {
+	border-color: #2ecc71;
+
+}
+
+
+.form-control.error input , .form-control.error textarea {
+	border-color: #e74c3c;
+}
+
+.form-control.error span{
+	color: #e74c3c;
+}
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+}
+
+.form-control.success i.fa-check-circle {
+	position: relative;
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	position:relative;
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	visibility: hidden;
+}
+
+.form-control.error ::after{
+	display:flex
+}
+.form-control.error small {
+	visibility: visible;
+}
+
+.col-25{
+	float: left;
+	width: 20%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 80%;
+	margin-top: 6px;
+}
+
+.col-35{
+	float: left;
+	width:33%;
+	margin-top: 6px;
+}
+
+
+.form button {
+	background-color: #2ecc71;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 25%;
+	align-items: right;
+}
+.form .border{
+	border-bottom: 1px solid #f0f0f0;
+	max-width: 80%;
+}
